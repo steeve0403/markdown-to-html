@@ -5,59 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markdown-to-html</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
 </head>
+<header>
+    <nav>
+        <a href="Home" >
+            <img src="logo-test.jpg" alt="Logo Steeve Zych" class="lien-icone">
+        </a>
+        <div>
+            <a href="home.html">Home</a>
+            <a href="About.html">A propos</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
 <body>
-    <h1>Steeve Zych</h1>
-    <q>"Dependence is the proof of failure, independence is the key to success.""
-    </q>
-    <img src="PhotoProfil.jpg" alt="Image de profil">
-    <q>“Patience is a virtue acquired with patience.”Alessandro Morandotti</q>
-    <table>
-        <caption>About</caption>
-            <tr>
-                <td>Birthday</td>
-                <td>04/03/1997</td>
-            </tr>
-            <tr>
-                <td>Favorite color</td>
-                <td>Dark shade of red</td>
-            </tr>
-            <tr>
-                <td>Favorite</td>
-                <td>"If it look good, it's good"</td>
-            </tr>
-    </table>
-    <fieldset>
-        <legend>Pineapple on Pizza</legend>
-            <label for="Yes">Yes</label>
-            <input type="radio" id="Yes" name="Yes">
-            <label for="No">No</label>
-            <input type="radio" id="No" name="No">
-            <button type="submit">Envoyer</button>
-    </fieldset>
-    <h2>Hobbies</h2>
-        <p>Myths & Legends</p>
-            <ol type="I">
-                <li>Cosmogony</li>
-                <li>Theogony</li>
-                <li>Anthropogony</li>
-            </ol>
-        <p>Mangas</p>
-            <ol type="I">
-                <li>One piece</li>
-                <li>Dragon Ball</li>
-                <li>Judge</li>
-            </ol>
-    <h3>You can always count on when I'm here.</h3>
+    <main>
+        <section class="présentation">
+            <div>
+                <h1>Steeve Zych Etudiant</h1>
+                <p>Decided to become a Junior Developer, I am currently training at Becode. 
+                Institution allowing to obtain concrete conpetences by a continuous reinforcement by a multidisciplinary learning including softs kills. 
+                </p>
+                <a href="contact.html" class="cta">Questions? Write me</a>
+            </div>
+            <img src="PhotoProfil.jpg" alt="Image de profil">
+        </section>
+        <section class="about">
+            <h2>About</h2>
+                <table>
+                    <tr>
+                        <td>Birthday</td>
+                        <td>04/03/1997</td>
+                    </tr>
+                    <tr>
+                        <td>Favorite color</td>
+                        <td>Dark shade of red</td>
+                    </tr>                        
+                    <tr>
+                        <td>Favorite</td>
+                        <td>"If it look good, it's good"</td>
+                    </tr>
+                </table>
+        </section>
+        <section class="pineapple">
+                <h2>Pineapple on Pizza</h2>
+                <div class="radio-inputs">
+                        <label class="radio">
+                            <input type="radio" name="radio" checked="">
+                            <span class="name">Yes</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio">
+                            <span class="name">No</span>
+                        </label>
+                </div>
+        </section>
+        <section class="smile">
+            <h3>You can always count on when I'm here.</h3>
 
-    <p>I'm methodic and I like to finish a project, No matter how difficult the job.
-    </p>
-    <h4>A joke for a good laugh</h4>
-        <p>“This is the story of a sandwich walking into a pub … The waitress says: Sorry we don’t serve food in here”.
-        </p>
-    <h4>Now a story to laugh at</h4>
-        <p>
-            Go to the Algarve, Portugal, to enjoy the sun and the heat and finally end up with water as cold as the North Sea. 
-        </p>
+            <p>I'm methodic and I like to finish a project, No matter how difficult the job.
+            </p>
+            <h4>A joke for a good laugh</h4>
+                <p>“This is the story of a sandwich walking into a pub … The waitress says: Sorry we don’t serve food in here”.
+                </p>
+            <h4>Now a story to laugh at</h4>
+                <p>
+                    Go to the Algarve, Portugal, to enjoy the sun and the heat and finally end up with water as cold as the North Sea. 
+                </p>
+        </section>
+        <section class="hobby">  
+            <div class="box">
+                <h2>Myths & Legends</h2>
+                    <div class="box-inner">
+                        <div id="box-front1">
+                    </div>
+                    <div class="box-back">
+                        <ul>
+                            <li>Cosmogony</li>
+                            <li>Theogony</li>
+                            <li>Anthropogony</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Mangas</h2>
+                    <div class="box-inner">
+                        <div id="box-front2"> 
+                    </div>
+                    <div class="box-back">
+                        <ul>
+                            <li>One Piece</li>
+                            <li>Dragon Ball</li>
+                            <li>Judge</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href="Home" >
+                <img src="logo-test.jpg" alt="Logo Steeve Zych" class="lien-icone">
+            </a>
+            <div>
+                <a target="_blank" href="https://github.com/steeve0403" >
+                    <img src="github.jpg" alt="Logo Github" class="lien-icone">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/steeve-zych/" >
+                    <img src="linkedln.jpg" alt="Logo Linkedln" class="lien-icone">
+                </a>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
